@@ -5,8 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class GovUkLandingPage {
+public class GovUkLandingPageTest {
+	
+	WebDriver driver = new FirefoxDriver();
 
 	@Before
 	public void setUp() throws Exception {
@@ -14,7 +18,9 @@ public class GovUkLandingPage {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		
+		driver.navigate().to("https://www.gov.uk");
+		
 	}
 
 	@After
